@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteTech - Soluciones Tecnológicas para Empresas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        nav a {
+            color: #f1f5f9;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }
+        section {
+            padding: 4rem 8%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 5rem 5%;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            color: white;
+            border-radius: 0 0 20px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #38bdf8;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: #94a3b8;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #0284c7;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0369a1;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            border: 1px solid #e2e8f0;
+        }
+        .card h3 {
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 0.5rem;
+        }
+        .card ul {
+            list-style-type: square;
+            padding-left: 1.2rem;
+        }
+        .card li {
+            margin-bottom: 0.5rem;
+        }
+        .contact-legal {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ByteTech</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Productos y Servicios</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto y Legal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="inicio" class="hero">
+        <h1>Transformación Digital para tu Empresa</h1>
+        <p>Proporcionamos infraestructura de hardware empresarial y soluciones de software a medida para garantizar el rendimiento y la seguridad de tu negocio.</p>
+        <a href="#servicios" class="btn">Ver Catálogo</a>
+    </div>
+
+    <section id="servicios">
+        <h2 style="text-align: center; font-size: 2rem; margin-bottom: 1rem;">Nuestras Soluciones Tecnológicas</h2>
+        <p style="text-align: center; color: #64748b; margin-bottom: 2rem;">Equipamiento integral y licencias oficiales diseñados para el entorno corporativo.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Hardware Empresarial</h3>
+                <ul>
+                    <li><strong>Servidores & NAS:</strong> Servidores en rack de alto rendimiento y almacenamiento en red con tolerancia a fallos.</li>
+                    <li><strong>Estaciones de Trabajo:</strong> PCs de sobremesa y portátiles profesionales optimizados para carga intensiva.</li>
+                    <li><strong>Redes Industriales:</strong> Switches gestionables L2/L3, routers de alta velocidad y puntos de acceso Wi-Fi 6.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Software & Ciberseguridad</h3>
+                <ul>
+                    <li><strong>Sistemas Operativos:</strong> Licenciamiento e implantación de Windows Server y Linux Enterprise.</li>
+                    <li><strong>Gestión Empresarial:</strong> Despliegue de plataformas ERP y CRM adaptadas a cada sector.</li>
+                    <li><strong>Ciberseguridad:</strong> Copias de seguridad automatizadas en la nube, protección contra ransomware y auditorías de red.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" style="background-color: #ffffff; border-radius: 12px; margin-top: 2rem; border: 1px solid #e2e8f0;">
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Sobre ByteTech</h2>
+        <p>En <strong>ByteTech</strong> nos dedicamos a ofrecer soporte tecnológico integral a pequeñas, medianas y grandes empresas. Nuestro equipo de ingenieros de sistemas y especialistas en redes trabaja para optimizar tus procesos operativos, garantizando máxima estabilidad y continuidad de negocio.</p>
+    </section>
+
+    <section id="contacto">
+        <div class="contact-legal">
+            <div class="card">
+                <h3>Información de Contacto</h3>
+                <p><strong>Dirección:</strong> Paseo de la Universidad, 12, 12006 Castellón de la Plana, Castellón</p>
+                <p><strong>Teléfono:</strong> +34 964 00 00 00</p>
+                <p><strong>Email:</strong> contacto@bytetech-solutions.es</p>
+                <p><strong>Horario:</strong> Lunes a Viernes de 8:00 a 18:00 h</p>
+            </div>
+            <div class="card">
+                <h3>Aviso Legal y RGPD</h3>
+                <p><strong>Razón Social:</strong> ByteTech S.L. (CIF: B-12345678)</p>
+                <p>En cumplimiento de la LSSI-CE y el Reglamento General de Protección de Datos (RGPD), le informamos que los datos recopilados a través de este sitio web serán tratados exclusivamente para la gestión de servicios corporativos y consultas comerciales.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 ByteTech S.L. Todos los derechos reservados.</p>
+        <p>Soluciones en Software y Hardware para Empresas</p>
+    </footer>
+
+</body>
+</html>
